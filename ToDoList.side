@@ -1,0 +1,85 @@
+{
+  "id": "21d1dedc-deaf-4c35-a02e-b374e8984504",
+  "version": "2.0",
+  "name": "ToDoList",
+  "url": "https://todolist.james.am",
+  "tests": [{
+    "id": "187c6c65-8621-4978-a4f4-2acc0323973e",
+    "name": "TestPierwszy",
+    "commands": [{
+      "id": "fb266450-1ca8-4e58-a404-4f4099e0a0c5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16f0cbe9-26ff-4f0a-9904-07c26fd4625f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44130fdf-f01f-4f16-abd4-dbda1b51a423",
+      "comment": "",
+      "command": "click",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4991ae00-1cc3-4690-8bad-b1e129a07769",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "blah"
+    }, {
+      "id": "cbe92a59-edf7-4c91-93ad-3a430b095dc9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d7603b3a-6d06-47fe-a866-413637b99481",
+      "comment": "",
+      "command": "type",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "   ciach"
+    }, {
+      "id": "78a73dd1-2e6a-46ec-877e-fa7223c8d68b",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.new-todo",
+      "targets": [
+        ["css=.new-todo", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "b5acf7a3-c3c3-4c33-848c-5aa9635a2920",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["187c6c65-8621-4978-a4f4-2acc0323973e"]
+  }],
+  "urls": ["https://todolist.james.am/"],
+  "plugins": []
+}
